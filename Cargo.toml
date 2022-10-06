@@ -1,0 +1,12 @@
+[package]
+name = "ra-bug"
+version = "0.0.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[features]
+default = ["c_api"]
+c_api = []
+
+[dependencies]
+safer-ffi = { version = "0.0.10", features = ["proc_macros"] }
