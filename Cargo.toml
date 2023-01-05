@@ -9,7 +9,7 @@ edition = "2021"
 critical-section = "1.1.1"
 defmt = "*"
 defmt-rtt = "*"
-esp32c3-hal = "0.4.0"
+esp32c3-hal = { version = "0.4.0", features = ["direct-boot"] }
 panic-halt = "0.2.0"
 riscv-rt = "0.10.0"
 
