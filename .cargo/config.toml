@@ -1,0 +1,15 @@
+[build]
+target = "riscv32imc-unknown-none-elf"
+
+[target.riscv32imc-unknown-none-elf]
+rustflags = [
+	# esp-hal
+	"-C",
+	"link-arg=-Tlinkall.x",
+	# defmt
+	"-C",
+	"link-arg=-Tdefmt.x",
+]
+
+[unstable]
+build-std = ["core"]

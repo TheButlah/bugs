@@ -1,0 +1,18 @@
+[package]
+name = "bugs"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+critical-section = "1.1.1"
+defmt = "*"
+defmt-rtt = "*"
+esp32c3-hal = "0.4.0"
+panic-halt = "0.2.0"
+riscv-rt = "0.10.0"
+
+[patch.crates-io]
+defmt = { git = "https://github.com/TheButlah/defmt", rev = "e2e0101" }
+defmt-rtt = { git = "https://github.com/TheButlah/defmt", rev = "e2e0101" }
