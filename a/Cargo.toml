@@ -1,0 +1,8 @@
+[package]
+name = "a"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tls-listener = { version = "0.10.3", features = ["rustls-core"] }
+tokio-rustls = { version = "0.26.0", default-features = false }
